@@ -5,7 +5,7 @@ html {
 
 body {
 	margin: 0;
-	display: grid;
+	display: block;
   background: rgb(30, 128, 185);
 	grid-template-columns: minmax(min-content, 200px) 1fr;
 	grid-template-areas: 
@@ -24,18 +24,26 @@ h4 {
 	margin-top: 0;
 	margin-bottom: 0.5em;
 	font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 h1 {
 	font-size: 5rem;
 	line-height: 1.2;
 	letter-spacing: -.1rem;
+  text-align: center;
+  display: inline-block;
+  margin-right: 150px;
 }
 
 h2 {
 	font-size: 3.8rem;
 	line-height: 1.25;
 	letter-spacing: -.1rem;
+  text-align: center;
+  margin-left: 800px;
+  margin-right: 800px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -48,14 +56,34 @@ h4 {
 	font-size: 2.0rem;
 	line-height: 1.35;
 	letter-spacing: -.08rem;
+  text-align: center;
+  margin-left: 800px;
+  margin-right: 800px;
 }
 
 header {
+  display: block;
 	grid-area: header;
 	background: rgb(255, 255, 255);
 	color: rgb(30, 128, 185);
 	padding: 4rem;
-	text-align: center;
+  text-align: center;
 }
 
+main {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
 
+main1 {
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 50px;
+}
+
+p {
+  margin-left: 1000px;
+  margin-right: 1000px;
+}
